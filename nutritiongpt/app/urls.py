@@ -3,8 +3,9 @@ from . import views
 
 
 urlpatterns = [
+   path('chatbot_response/', views.chatbot_response, name='chatbot_response'),
    path('logout/', views.logout, name='logout'),
    path('login/', views.login, name='login'),
    path('register/', views.register, name='register'),
-   path('index/', views.index, name='index'),
+   path('', views.index, name='index'),
 ]
