@@ -1,6 +1,6 @@
 # NutriGPT
 
-NutriGPT is a web application built with Django that uses OpenAI's GPT-3.5 architecture to generate personalized nutrition plans for users based on their dietary preferences and goals.
+NutriGPT is a web application that let's you keep track of your daily nutrition and exercise rates.
 
 ## Installation
 
@@ -31,8 +31,3 @@ The web application should now be accessible at http://127.0.0.1:8000/.
 
 Note: The above instructions assume that you have already obtained an API key from OpenAI. If you have not done so, please visit their website to learn more about their services and how to obtain an API key. 
 
-## Usage
-
-Once the web application is running, users can access the homepage to generate personalized nutrition plans. They will be prompted to enter information about their dietary preferences, goals, and any dietary restrictions they may have. NutriGPT will use this information to generate a personalized nutrition plan for the user, which they can then save, print, or email to themselves. 
-
-Thank you for using NutriGPT!
