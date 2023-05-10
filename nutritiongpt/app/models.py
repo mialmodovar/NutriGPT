@@ -10,6 +10,10 @@ class UserProfile(models.Model):
     height = models.FloatField(null=True, blank=True)  # in centimeters
     weight = models.FloatField(null=True, blank=True)  # in kilograms
     gender = models.CharField(max_length=10, choices=[("Male", "Male"), ("Female", "Female"), ("Other", "Other")], null=True, blank=True)
+    calories_goal = models.FloatField(default=2500)
+    protein_goal = models.FloatField(default=343)
+    carbohydrates_goal = models.FloatField(default=140)
+    fats_goal = models.FloatField(default=76)
 
     def __str__(self):
         return self.user.username
@@ -28,8 +32,3 @@ class DailyIntake(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.date}"
 
-@receiver(post_save, sender=User)
-def create_user_profile_and_daily_intake(sender, instance, created, **kwargs):
-    if created:
-        UserProfile.objects.create(user=instance)
-        DailyIntake.objects.create(user=instance)

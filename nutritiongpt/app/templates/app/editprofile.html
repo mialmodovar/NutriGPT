@@ -3,6 +3,7 @@
 
 <head>
 
+    {% load static %}
     <!-- META DATA -->
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
@@ -12,26 +13,26 @@
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href=" {% static '../assets/images/brand/favicon.ico' %} ">
+    <link rel="shortcut icon" type="image/x-icon" href=" {% static '/assets/images/brand/favicon.ico' %} ">
 
     <!-- TITLE -->
     <title>Sash – Bootstrap 5 Admin & Dashboard Template</title>
 
     <!-- BOOTSTRAP CSS -->
-    <link id="style" href=" {% static '../assets/plugins/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+    <link id="style" href=" {% static '/assets/plugins/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
 
     <!-- STYLE CSS -->
-     <link href=" {% static '../assets/css/style.css' %} " rel="stylesheet">
+     <link href=" {% static '/assets/css/style.css' %} " rel="stylesheet">
 
 	<!-- Plugins CSS -->
-    <link href=" {% static '../assets/css/plugins.css' %} " rel="stylesheet">
+    <link href=" {% static '/assets/css/plugins.css' %} " rel="stylesheet">
 
     <!--- FONT-ICONS CSS -->
-    <link href=" {% static '../assets/css/icons.css' %} " rel="stylesheet">
+    <link href=" {% static '/assets/css/icons.css' %} " rel="stylesheet">
 
     <!-- INTERNAL Switcher css -->
-    <link href=" {% static '../assets/switcher/css/switcher.css' %} " rel="stylesheet">
-    <link href=" {% static '../assets/switcher/demo.css' %} " rel="stylesheet">
+    <link href=" {% static '/assets/switcher/css/switcher.css' %} " rel="stylesheet">
+    <link href=" {% static '/assets/switcher/demo.css' %} " rel="stylesheet">
 
 </head>
 
@@ -39,7 +40,7 @@
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
-        <img src=" {% static '../assets/images/loader.svg' %} " class="loader-img" alt="Loader">
+        <img src=" {% static '/assets/images/loader.svg' %} " class="loader-img" alt="Loader">
     </div>
     <!-- /GLOBAL-LOADER -->
 
@@ -54,13 +55,13 @@
                         <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href=" {% static 'javascript:void(0)' %} "></a>
                         <!-- sidebar-toggle-->
                         <a class="logo-horizontal " href=" {% static 'index.html' %} ">
-                            <img src=" {% static '../assets/images/brand/logo-white.png' %} " class="header-brand-img desktop-logo" alt="logo">
-                            <img src=" {% static '../assets/images/brand/logo-dark.png' %} " class="header-brand-img light-logo1"
+                            <img src=" {% static '/assets/images/brand/logo-white.png' %} " class="header-brand-img desktop-logo" alt="logo">
+                            <img src=" {% static '/assets/images/brand/logo-dark.png' %} " class="header-brand-img light-logo1"
                                 alt="logo">
                         </a>
                         <!-- LOGO -->
                         <div class="main-header-center ms-3 d-none d-lg-block">
-                            <input type="text" class="form-control" id="typehead" placeholder="Search for results...">
+                            <input type="text" class="form-control" id="typehead" placeholder="Search for results.">
                             <button class="btn px-0 pt-2"><i class="fe fe-search" aria-hidden="true"></i></button>
                         </div>
                         <div class="d-flex order-lg-2 ms-auto header-right-icons">
@@ -80,7 +81,7 @@
                                             </a>
                                             <div class="dropdown-menu header-search dropdown-menu-start">
                                                 <div class="input-group w-100 p-2">
-                                                    <input type="text" class="form-control" placeholder="Search....">
+                                                    <input type="text" class="form-control" placeholder="Search">
                                                     <div class="input-group-text btn btn-primary">
                                                         <i class="fa fa-search" aria-hidden="true"></i>
                                                     </div>
@@ -120,7 +121,7 @@
                                                         <a href=" {% static 'cart.html' %} " class="open-file"></a>
                                                         <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/products/3.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/products/3.jpg' %} "></span>
                                                         <div class="wd-50p">
                                                             <h5 class="mb-1">Flower Pot for Home Decor</h5>
                                                             <span>Status: <span class="text-success">In Stock</span></span>
@@ -139,7 +140,7 @@
                                                         <a href=" {% static 'cart.html' %} " class="open-file"></a>
                                                         <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/products/5.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/products/5.jpg' %} "></span>
                                                         <div class="wd-50p">
                                                             <h5 class="mb-1">Black Digital Camera</h5>
                                                             <span>Status: <span class="text-danger">Out Stock</span></span>
@@ -158,7 +159,7 @@
                                                         <a href=" {% static 'cart.html' %} " class="open-file"></a>
                                                         <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/products/7.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/products/7.jpg' %} "></span>
                                                         <div class="wd-50p">
                                                             <h5 class="mb-1">Stylish Rockerz 255 Ear Pods</h5>
                                                             <span>Status: <span class="text-success">In Stock</span></span>
@@ -177,7 +178,7 @@
                                                         <a href=" {% static 'cart.html' %} " class="open-file"></a>
                                                         <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/products/1.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/products/1.jpg' %} "></span>
                                                         <div class="wd-50p">
                                                             <h5 class="mb-1">Women Party Wear Dress</h5>
                                                             <span>Status: <span class="text-success">In Stock</span></span>
@@ -196,7 +197,7 @@
                                                         <a href=" {% static 'cart.html' %} " class="open-file"></a>
                                                         <span
                                                             class="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/products/2.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/products/2.jpg' %} "></span>
                                                         <div class="wd-50p">
                                                             <h5 class="mb-1">Running Shoes for men</h5>
                                                             <span>Status: <span class="text-success">In Stock</span></span>
@@ -303,7 +304,7 @@
                                                     <a class="dropdown-item d-flex" href=" {% static 'chat.html' %} ">
                                                         <span
                                                             class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/users/1.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/users/1.jpg' %} "></span>
                                                         <div class="wd-90p">
                                                             <div class="d-flex">
                                                                 <h5 class="mb-1">Peter Theil</h5>
@@ -311,13 +312,13 @@
                                                                     6:45 am
                                                                 </small>
                                                             </div>
-                                                            <span>Commented on file Guest list....</span>
+                                                            <span>Commented on file Guest list</span>
                                                         </div>
                                                     </a>
                                                     <a class="dropdown-item d-flex" href=" {% static 'chat.html' %} ">
                                                         <span
                                                             class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/users/15.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/users/15.jpg' %} "></span>
                                                         <div class="wd-90p">
                                                             <div class="d-flex">
                                                                 <h5 class="mb-1">Abagael Luth</h5>
@@ -325,13 +326,13 @@
                                                                     10:35 am
                                                                 </small>
                                                             </div>
-                                                            <span>New Meetup Started......</span>
+                                                            <span>New Meetup Started</span>
                                                         </div>
                                                     </a>
                                                     <a class="dropdown-item d-flex" href=" {% static 'chat.html' %} ">
                                                         <span
                                                             class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/users/12.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/users/12.jpg' %} "></span>
                                                         <div class="wd-90p">
                                                             <div class="d-flex">
                                                                 <h5 class="mb-1">Brizid Dawson</h5>
@@ -339,13 +340,13 @@
                                                                     2:17 pm
                                                                 </small>
                                                             </div>
-                                                            <span>Brizid is in the Warehouse...</span>
+                                                            <span>Brizid is in the Warehouse.</span>
                                                         </div>
                                                     </a>
                                                     <a class="dropdown-item d-flex" href=" {% static 'chat.html' %} ">
                                                         <span
                                                             class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/users/4.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/users/4.jpg' %} "></span>
                                                         <div class="wd-90p">
                                                             <div class="d-flex">
                                                                 <h5 class="mb-1">Shannon Shaw</h5>
@@ -353,13 +354,13 @@
                                                                     7:55 pm
                                                                 </small>
                                                             </div>
-                                                            <span>New Product Realease......</span>
+                                                            <span>New Product Realease</span>
                                                         </div>
                                                     </a>
                                                     <a class="dropdown-item d-flex" href=" {% static 'chat.html' %} ">
                                                         <span
                                                             class="avatar avatar-md brround me-3 align-self-center cover-image"
-                                                            data-bs-image-src=" {% static '../assets/images/users/3.jpg' %} "></span>
+                                                            data-bs-image-src=" {% static '/assets/images/users/3.jpg' %} "></span>
                                                         <div class="wd-90p">
                                                             <div class="d-flex">
                                                                 <h5 class="mb-1">Cherry Blossom</h5>
@@ -367,7 +368,7 @@
                                                                     7:55 pm
                                                                 </small>
                                                             </div>
-                                                            <span>You have appointment on......</span>
+                                                            <span>You have appointment on</span>
                                                         </div>
                                                     </a>
 
@@ -387,7 +388,7 @@
                                         <!-- SIDE-MENU -->
                                         <div class="dropdown d-flex profile-1">
                                             <a href=" {% static 'javascript:void(0)' %} " data-bs-toggle="dropdown" class="nav-link leading-none d-flex">
-                                                <img src=" {% static '../assets/images/users/21.jpg' %} " alt="profile-user"
+                                                <img src=" {% static '/assets/images/users/21.jpg' %} " alt="profile-user"
                                                     class="avatar  profile-user brround cover-image">
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -428,11 +429,11 @@
                 <div class="app-sidebar">
                     <div class="side-header">
                         <a class="header-brand1" href=" {% static 'index.html' %} ">
-                            <img src=" {% static '../assets/images/brand/logo-white.png' %} " class="header-brand-img desktop-logo" alt="logo">
-                            <img src=" {% static '../assets/images/brand/icon-white.png' %} " class="header-brand-img toggle-logo"
+                            <img src=" {% static '/assets/images/brand/logo-white.png' %} " class="header-brand-img desktop-logo" alt="logo">
+                            <img src=" {% static '/assets/images/brand/icon-white.png' %} " class="header-brand-img toggle-logo"
                                 alt="logo">
-                            <img src=" {% static '../assets/images/brand/icon-dark.png' %} " class="header-brand-img light-logo" alt="logo">
-                            <img src=" {% static '../assets/images/brand/logo-dark.png' %} " class="header-brand-img light-logo1"
+                            <img src=" {% static '/assets/images/brand/icon-dark.png' %} " class="header-brand-img light-logo" alt="logo">
+                            <img src=" {% static '/assets/images/brand/logo-dark.png' %} " class="header-brand-img light-logo1"
                                 alt="logo">
                         </a>
                         <!-- LOGO -->
@@ -502,7 +503,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -516,7 +517,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -527,7 +528,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -537,7 +538,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -555,7 +556,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -571,11 +572,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -593,7 +594,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -611,7 +612,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -620,7 +621,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -629,7 +630,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -700,7 +701,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -714,7 +715,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -725,7 +726,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -735,7 +736,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -753,7 +754,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -769,11 +770,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -791,7 +792,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -809,7 +810,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -818,7 +819,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -827,7 +828,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -937,7 +938,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -951,7 +952,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -962,7 +963,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -972,7 +973,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -990,7 +991,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -1006,11 +1007,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -1028,7 +1029,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -1046,7 +1047,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -1055,7 +1056,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -1064,7 +1065,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -1114,7 +1115,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -1128,7 +1129,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1139,7 +1140,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1149,7 +1150,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -1167,7 +1168,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -1183,11 +1184,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -1205,7 +1206,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -1223,7 +1224,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -1232,7 +1233,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -1241,7 +1242,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -1289,7 +1290,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -1303,7 +1304,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1314,7 +1315,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1324,7 +1325,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -1342,7 +1343,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -1358,11 +1359,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -1380,7 +1381,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -1398,7 +1399,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -1407,7 +1408,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -1416,7 +1417,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -1480,7 +1481,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -1494,7 +1495,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1505,7 +1506,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1515,7 +1516,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -1533,7 +1534,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -1549,11 +1550,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -1571,7 +1572,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -1589,7 +1590,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -1598,7 +1599,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -1607,7 +1608,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -1674,7 +1675,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -1688,7 +1689,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1699,7 +1700,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1709,7 +1710,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -1727,7 +1728,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -1743,11 +1744,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -1765,7 +1766,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -1783,7 +1784,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -1792,7 +1793,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -1801,7 +1802,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -1851,7 +1852,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -1865,7 +1866,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1876,7 +1877,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -1886,7 +1887,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -1904,7 +1905,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -1920,11 +1921,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -1942,7 +1943,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -1960,7 +1961,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -1969,7 +1970,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -1978,7 +1979,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -2032,7 +2033,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -2046,7 +2047,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -2057,7 +2058,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -2067,7 +2068,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -2085,7 +2086,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -2101,11 +2102,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -2123,7 +2124,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -2141,7 +2142,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -2150,7 +2151,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -2159,7 +2160,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -2214,7 +2215,7 @@
                                                                 <div>
                                                                     <h5 class="title mt-0 mb-1 ms-2 font-weight-bold tx-12"> Go for Premium Account </h5>
                                                                     <div class="bg-layer">
-                                                                        <img src=" {% static '../assets/../assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
+                                                                        <img src=" {% static '/assets//assets/images/media/37.png' %} " alt="img" class="text-center mx-auto">
                                                                     </div>
                                                                     <p class="subtext mt-0 mb-0 ms-2 fs-13 text-center my-2"> $399.9 /Monthly</p>
                                                                 </div>
@@ -2228,7 +2229,7 @@
                                                     <div class="main-chat-list tab-pane">
                                                         <div class="media border-0 px-1 new border-top-0">
                                                             <div class="main-img-user online">
-                                                                <img alt="" src=" {% static '../assets/images/users/5.jpg' %} ">
+                                                                <img alt="" src=" {% static '/assets/images/users/5.jpg' %} ">
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -2239,7 +2240,7 @@
                                                         </div>
                                                         <div class="media border-0 px-1 new">
                                                             <div class="main-img-user">
-                                                                <img alt="" src=" {% static '../assets/images/users/6.jpg' %} "> <span>3</span>
+                                                                <img alt="" src=" {% static '/assets/images/users/6.jpg' %} "> <span>3</span>
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
@@ -2249,7 +2250,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user online"><img alt="" src=" {% static '../assets/images/users/9.jpg' %} "></div>
+                                                            <div class="main-img-user online"><img alt="" src=" {% static '/assets/images/users/9.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Reynante Labares</span> <span>9.40 am</span>
@@ -2267,7 +2268,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/4.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/4.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Rolando Paloso</span> <span>1.38 pm</span>
@@ -2283,11 +2284,11 @@
                                                                 <div class="media-contact-name">
                                                                     <span>Dexter dela Cruz</span> <span>4.08 pm</span>
                                                                 </div>
-                                                                <p>Typing...</p>
+                                                                <p>Typing.</p>
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/21.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/21.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Maricel Villalon</span> <span>8.09 pm</span>
@@ -2305,7 +2306,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/5.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/5.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Lovely Dela Cruz</span> <span>3 days ago</span>
@@ -2323,7 +2324,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/3.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/3.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>John Pratts</span> <span>20/06/2021</span>
@@ -2332,7 +2333,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/7.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/7.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Socrates Itumay</span> <span>18/07/2021</span>
@@ -2341,7 +2342,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="media border-0 px-1 new border-bottom-0">
-                                                            <div class="main-img-user"><img alt="" src=" {% static '../assets/images/users/6.jpg' %} "></div>
+                                                            <div class="main-img-user"><img alt="" src=" {% static '/assets/images/users/6.jpg' %} "></div>
                                                             <div class="media-body">
                                                                 <div class="media-contact-name">
                                                                     <span>Samuel Lerin</span> <span>29/07/2021</span>
@@ -2395,7 +2396,7 @@
                                     <div class="card-body">
                                         <div class="text-center chat-image mb-5">
                                             <div class="avatar avatar-xxl chat-profile mb-3 brround">
-                                                <a class="" href=" {% static 'profile.html' %} "><img alt="avatar" src=" {% static '../assets/images/users/7.jpg' %} " class="brround"></a>
+                                                <a class="" href=" {% static 'profile.html' %} "><img alt="avatar" src=" {% static '/assets/images/users/7.jpg' %} " class="brround"></a>
                                             </div>
                                             <div class="main-chat-msg-name">
                                                 <a href=" {% static 'profile.html' %} ">
@@ -2437,36 +2438,7 @@
                                         <a href=" {% static 'javascript:void(0)' %} " class="btn btn-danger">Cancel</a>
                                     </div>
                                 </div>
-                                <div class="card panel-theme">
-                                    <div class="card-header">
-                                        <div class="float-start">
-                                            <h3 class="card-title">Contact</h3>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="card-body no-padding">
-                                        <ul class="list-group no-margin">
-                                            <li class="list-group-item d-flex ps-3">
-                                                <div class="social social-profile-buttons me-2">
-                                                    <a class="social-icon text-primary" href=" {% static 'javascript:void(0)' %} "><i class="fe fe-mail"></i></a>
-                                                </div>
-                                                <a href=" {% static 'javascript:void(0)' %} " class="my-auto">support@demo.com</a>
-                                            </li>
-                                            <li class="list-group-item d-flex ps-3">
-                                                <div class="social social-profile-buttons me-2">
-                                                    <a class="social-icon text-primary" href=" {% static 'javascript:void(0)' %} "><i class="fe fe-globe"></i></a>
-                                                </div>
-                                                <a href=" {% static 'javascript:void(0)' %} " class="my-auto">www.abcd.com</a>
-                                            </li>
-                                            <li class="list-group-item d-flex ps-3">
-                                                <div class="social social-profile-buttons me-2">
-                                                    <a class="social-icon text-primary" href=" {% static 'javascript:void(0)' %} "><i class="fe fe-phone"></i></a>
-                                                </div>
-                                                <a href=" {% static 'javascript:void(0)' %} " class="my-auto">+125 5826 3658</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="col-xl-8">
                                 <div class="card">
@@ -2475,255 +2447,17 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-lg-6 col-md-12">
-                                                <div class="form-group">
-                                                    <label for="exampleInputname">First Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputname" placeholder="First Name">
+                                            <form method="post" enctype="multipart/form-data">
+                                                {% csrf_token %}
+                                                {{ form.as_p }}
+                                                <div class="card-footer text-end">
+                                                  <button type="submit" class="btn btn-success my-1">Save</button>
+                                                  <a href="javascript:void(0)" class="btn btn-danger my-1">Cancel</a>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-12">
-                                                <div class="form-group">
-                                                    <label for="exampleInputname1">Last Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Last Name">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputnumber">Contact Number</label>
-                                            <input type="number" class="form-control" id="exampleInputnumber" placeholder="Contact number">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label">About Me</label>
-                                            <textarea class="form-control" rows="6">My bio.........</textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label">Website</label>
-                                            <input class="form-control" placeholder="http://splink.com">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label">Date Of Birth</label>
-                                            <div class="row">
-                                                <div class="col-md-4 mb-2">
-                                                    <select class="form-control select2 form-select">
-                                                            <option value="0">Date</option>
-                                                            <option value="1">01</option>
-                                                            <option value="2">02</option>
-                                                            <option value="3">03</option>
-                                                            <option value="4">04</option>
-                                                            <option value="5">05</option>
-                                                            <option value="6">06</option>
-                                                            <option value="7">07</option>
-                                                            <option value="8">08</option>
-                                                            <option value="9">09</option>
-                                                            <option value="10">10</option>
-                                                            <option value="11">11</option>
-                                                            <option value="12">12</option>
-                                                            <option value="13">13</option>
-                                                            <option value="14">14</option>
-                                                            <option value="15">15</option>
-                                                            <option value="16">16</option>
-                                                            <option value="17">17</option>
-                                                            <option value="18">18</option>
-                                                            <option value="19">19</option>
-                                                            <option value="20">20</option>
-                                                            <option value="21">21</option>
-                                                            <option value="22">22</option>
-                                                            <option value="23">23</option>
-                                                            <option value="24">24</option>
-                                                            <option value="25">25</option>
-                                                            <option value="26">26</option>
-                                                            <option value="27">27</option>
-                                                            <option value="28">28</option>
-                                                            <option value="29">29</option>
-                                                            <option value="30">30</option>
-                                                            <option value="31">31</option>
-                                                        </select>
-                                                </div>
-                                                <div class="col-md-4 mb-2">
-                                                    <select class="form-control select2 form-select">
-                                                            <option value="0">Mon</option>
-                                                            <option value="1">Jan</option>
-                                                            <option value="2">Feb</option>
-                                                            <option value="3">Mar</option>
-                                                            <option value="4">Apr</option>
-                                                            <option value="5">May</option>
-                                                            <option value="6">June</option>
-                                                            <option value="7">July</option>
-                                                            <option value="8">Aug</option>
-                                                            <option value="9">Sep</option>
-                                                            <option value="10">Oct</option>
-                                                            <option value="11">Nov</option>
-                                                            <option value="12">Dec</option>
-                                                        </select>
-                                                </div>
-                                                <div class="col-md-4 mb-2">
-                                                    <select class="form-control select2 form-select">
-                                                            <option value="0">Year</option>
-                                                            <option value="1">2018</option>
-                                                            <option value="2">2017</option>
-                                                            <option value="3">2016</option>
-                                                            <option value="4">2015</option>
-                                                            <option value="5">2014</option>
-                                                            <option value="6">2013</option>
-                                                            <option value="7">2102</option>
-                                                            <option value="8">2012</option>
-                                                            <option value="9">2011</option>
-                                                            <option value="10">2010</option>
-                                                            <option value="11">2009</option>
-                                                            <option value="12">2008</option>
-                                                            <option value="13">2007</option>
-                                                            <option value="14">2006</option>
-                                                            <option value="15">2005</option>
-                                                            <option value="16">2004</option>
-                                                            <option value="17">2003</option>
-                                                            <option value="18">2002</option>
-                                                            <option value="19">2001</option>
-                                                            <option value="20">1999</option>
-                                                            <option value="21">1998</option>
-                                                            <option value="22">1997</option>
-                                                            <option value="23">1996</option>
-                                                            <option value="24">1995</option>
-                                                            <option value="25">1994</option>
-                                                            <option value="26">1993</option>
-                                                            <option value="27">1992</option>
-                                                            <option value="28">1991</option>
-                                                            <option value="29">1990</option>
-                                                            <option value="30">1989</option>
-                                                            <option value="31">1988</option>
-                                                        </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer text-end">
-                                        <a href=" {% static 'javascript:void(0)' %} " class="btn btn-success my-1">Save</a>
-                                        <a href=" {% static 'javascript:void(0)' %} " class="btn btn-danger my-1">Cancel</a>
-                                    </div>
+                                              </form>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Notifications</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                    <span class="custom-switch-indicator me-3"></span>
-                                                    <span class="custom-switch-description mg-l-10">Updates Automatically</span>
-                                                </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                                                    <span class="custom-switch-indicator me-3"></span>
-                                                    <span class="custom-switch-description mg-l-10">Allow Location Map</span>
-                                                </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                    <span class="custom-switch-indicator me-3"></span>
-                                                    <span class="custom-switch-description mg-l-10">Show Contacts</span>
-                                                </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                    <span class="custom-switch-indicator me-3"></span>
-                                                    <span class="custom-switch-description mg-l-10">Show Notfication</span>
-                                                </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                                                    <span class="custom-switch-indicator me-3"></span>
-                                                    <span class="custom-switch-description mg-l-10">Show Tasks Statistics</span>
-                                                </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                    <span class="custom-switch-indicator me-3"></span>
-                                                    <span class="custom-switch-description mg-l-10">Show Email Notification</span>
-                                                </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="card-title">Privacy and Security</div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                                <span class="custom-switch-indicator me-3"></span>
-                                                                <span class="custom-switch-description mg-l-10">Allow Others to see my profile</span>
-                                                            </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                                                                <span class="custom-switch-indicator me-3"></span>
-                                                                <span class="custom-switch-description mg-l-10">Make my profile Public</span>
-                                                            </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                                                                <span class="custom-switch-indicator me-3"></span>
-                                                                <span class="custom-switch-description mg-l-10">Security Alert</span>
-                                                            </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                                <span class="custom-switch-indicator me-3"></span>
-                                                                <span class="custom-switch-description mg-l-10">Passcode and Face ID</span>
-                                                            </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                                                                <span class="custom-switch-indicator me-3"></span>
-                                                                <span class="custom-switch-description mg-l-10">Two Step Verification</span>
-                                                            </label>
-                                                </div>
-                                                <div class="form-group mg-b-10">
-                                                    <label class="custom-switch ps-0">
-                                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked="">
-                                                                <span class="custom-switch-indicator me-3"></span>
-                                                                <span class="custom-switch-description mg-l-10">Always Sign In</span>
-                                                            </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="card-title">Delete Account</div>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>Its Advisable for you to request your data to be sent to your Email.</p>
-                                        <label class="custom-control custom-checkbox mb-0">
-                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                            <span class="custom-control-label">Yes, Send my data to my Email.</span>
-                                        </label>
-                                    </div>
-                                    <div class="card-footer text-end">
-                                        <a href=" {% static 'javascript:void(0)' %} " class="btn btn-primary my-1">Deactivate</a>
-                                        <a href=" {% static 'javascript:void(0)' %} " class="btn btn-danger my-1">Delete Account</a>
-                                    </div>
-                                </div>
+                               
+                             
                             </div>
                         </div>
                         <!-- ROW-1 CLOSED -->
@@ -2946,40 +2680,40 @@
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/2.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/2.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Addie Minstra</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hey! there I' am available.... </p>
+                                            <p class="mb-0 fs-12 text-muted"> Hey! there I' am available </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/11.jpg' %} "><span
+                                            data-bs-image-src=" {% static '/assets/images/users/11.jpg' %} "><span
                                                 class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Rose Bush</div>
-                                            <p class="mb-0 fs-12 text-muted"> Okay...I will be waiting for you </p>
+                                            <p class="mb-0 fs-12 text-muted"> Okay.I will be waiting for you </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/10.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/10.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Claude Strophobia</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
+                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project
                                             </p>
                                         </a>
                                     </div>
@@ -2987,40 +2721,40 @@
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/13.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/13.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Eileen Dover</div>
-                                            <p class="mb-0 fs-12 text-muted"> New product Launching... </p>
+                                            <p class="mb-0 fs-12 text-muted"> New product Launching. </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/12.jpg' %} "><span
+                                            data-bs-image-src=" {% static '/assets/images/users/12.jpg' %} "><span
                                                 class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Willie Findit</div>
-                                            <p class="mb-0 fs-12 text-muted"> Okay...I will be waiting for you </p>
+                                            <p class="mb-0 fs-12 text-muted"> Okay.I will be waiting for you </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/15.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/15.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Manny Jah</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
+                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project
                                             </p>
                                         </a>
                                     </div>
@@ -3028,13 +2762,13 @@
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/4.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/4.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Cherry Blossom</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hey! there I' am available....</p>
+                                            <p class="mb-0 fs-12 text-muted"> Hey! there I' am available</p>
                                         </a>
                                     </div>
                                 </div>
@@ -3042,27 +2776,27 @@
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/7.jpg' %} "><span
+                                            data-bs-image-src=" {% static '/assets/images/users/7.jpg' %} "><span
                                                 class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Simon Sais</div>
-                                            <p class="mb-0 fs-12 text-muted">Schedule Realease...... </p>
+                                            <p class="mb-0 fs-12 text-muted">Schedule Realease </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/9.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/9.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Laura Biding</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
+                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project
                                             </p>
                                         </a>
                                     </div>
@@ -3070,27 +2804,27 @@
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/2.jpg' %} "><span
+                                            data-bs-image-src=" {% static '/assets/images/users/2.jpg' %} "><span
                                                 class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Addie Minstra</div>
-                                            <p class="mb-0 fs-12 text-muted">Contact me for details....</p>
+                                            <p class="mb-0 fs-12 text-muted">Contact me for details</p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/9.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/9.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Ivan Notheridiya</div>
-                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project......
+                                            <p class="mb-0 fs-12 text-muted"> Hi we can explain our new project
                                             </p>
                                         </a>
                                     </div>
@@ -3098,33 +2832,33 @@
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/14.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/14.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Dulcie Veeta</div>
-                                            <p class="mb-0 fs-12 text-muted"> Okay...I will be waiting for you </p>
+                                            <p class="mb-0 fs-12 text-muted"> Okay.I will be waiting for you </p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/11.jpg' %} "></span>
+                                            data-bs-image-src=" {% static '/assets/images/users/11.jpg' %} "></span>
                                     </div>
                                     <div class="">
                                         <a href=" {% static 'chat.html' %} ">
                                             <div class="fw-semibold text-dark" data-bs-toggle="modal"
                                                 data-target="#chatmodel">Florinda Carasco</div>
-                                            <p class="mb-0 fs-12 text-muted">New product Launching...</p>
+                                            <p class="mb-0 fs-12 text-muted">New product Launching.</p>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex align-items-center">
                                     <div class="me-2">
                                         <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src=" {% static '../assets/images/users/4.jpg' %} "><span
+                                            data-bs-image-src=" {% static '/assets/images/users/4.jpg' %} "><span
                                                 class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="">
@@ -3237,68 +2971,68 @@
                         <ul class="row p-3">
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block active">
-                                    <span class="country-selector"><img alt="" src=" {% static '../assets/images/flags-img/us_flag.jpg' %} "
+                                    <span class="country-selector"><img alt="" src=" {% static '/assets/images/flags-img/us_flag.jpg' %} "
                                             class="me-3 language"></span>USA
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/italy_flag.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/italy_flag.jpg' %} "
                                         class="me-3 language"></span>Italy
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/spain_flag.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/spain_flag.jpg' %} "
                                         class="me-3 language"></span>Spain
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/india_flag.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/india_flag.jpg' %} "
                                         class="me-3 language"></span>India
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/french_flag.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/french_flag.jpg' %} "
                                         class="me-3 language"></span>French
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/russia_flag.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/russia_flag.jpg' %} "
                                         class="me-3 language"></span>Russia
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/germany_flag.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/germany_flag.jpg' %} "
                                         class="me-3 language"></span>Germany
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
                                     <span class="country-selector"><img alt=""
-                                        src=" {% static '../assets/images/flags-img/argentina.jpg' %} "
+                                        src=" {% static '/assets/images/flags-img/argentina.jpg' %} "
                                         class="me-3 language"></span>Argentina
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
-                                    <span class="country-selector"><img alt="" src=" {% static '../assets/images/flags-img/malaysia.jpg' %} "
+                                    <span class="country-selector"><img alt="" src=" {% static '/assets/images/flags-img/malaysia.jpg' %} "
                                         class="me-3 language"></span>Malaysia
                                 </a>
                             </li>
                             <li class="col-lg-6 mb-2">
                                 <a href=" {% static 'javascript:void(0)' %} " class="btn btn-country btn-lg btn-block">
-                                    <span class="country-selector"><img alt="" src=" {% static '../assets/images/flags-img/turkey.jpg' %} "
+                                    <span class="country-selector"><img alt="" src=" {% static '/assets/images/flags-img/turkey.jpg' %} "
                                         class="me-3 language"></span>Turkey
                                 </a>
                             </li>
@@ -3326,51 +3060,51 @@
     <a href=" {% static '#top' %} " id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JQUERY JS -->
-    <script src=" {% static '../assets/js/jquery.min.js' %} "></script>
+    <script src=" {% static '/assets/js/jquery.min.js' %} "></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src=" {% static '../assets/plugins/bootstrap/js/popper.min.js' %} "></script>
-    <script src=" {% static '../assets/plugins/bootstrap/js/bootstrap.min.js' %} "></script>
+    <script src=" {% static '/assets/plugins/bootstrap/js/popper.min.js' %} "></script>
+    <script src=" {% static '/assets/plugins/bootstrap/js/bootstrap.min.js' %} "></script>
 
     <!-- INPUT MASK JS-->
-    <script src=" {% static '../assets/plugins/input-mask/jquery.mask.min.js' %} "></script>
+    <script src=" {% static '/assets/plugins/input-mask/jquery.mask.min.js' %} "></script>
 
 	<!-- TypeHead js -->
-	<script src=" {% static '../assets/plugins/bootstrap5-typehead/autocomplete.js' %} "></script>
-    <script src=" {% static '../assets/js/typehead.js' %} "></script>
+	<script src=" {% static '/assets/plugins/bootstrap5-typehead/autocomplete.js' %} "></script>
+    <script src=" {% static '/assets/js/typehead.js' %} "></script>
 
     <!-- SHOW PASSWORD JS -->
-    <script src=" {% static '../assets/js/show-password.min.js' %} "></script>
+    <script src=" {% static '/assets/js/show-password.min.js' %} "></script>
 
     <!-- INTERNAL SELECT2 JS -->
-    <script src=" {% static '../assets/plugins/select2/select2.full.min.js' %} "></script>
-    <script src=" {% static '../assets/js/select2.js' %} "></script>
+    <script src=" {% static '/assets/plugins/select2/select2.full.min.js' %} "></script>
+    <script src=" {% static '/assets/js/select2.js' %} "></script>
 
     <!-- Perfect SCROLLBAR JS-->
-    <script src=" {% static '../assets/plugins/p-scroll/perfect-scrollbar.js' %} "></script>
-    <script src=" {% static '../assets/plugins/p-scroll/pscroll.js' %} "></script>
-    <script src=" {% static '../assets/plugins/p-scroll/pscroll-1.js' %} "></script>
+    <script src=" {% static '/assets/plugins/p-scroll/perfect-scrollbar.js' %} "></script>
+    <script src=" {% static '/assets/plugins/p-scroll/pscroll.js' %} "></script>
+    <script src=" {% static '/assets/plugins/p-scroll/pscroll-1.js' %} "></script>
 
     <!-- SIDE-MENU JS -->
-    <script src=" {% static '../assets/plugins/sidemenu/sidemenu.js' %} "></script>
+    <script src=" {% static '/assets/plugins/sidemenu/sidemenu.js' %} "></script>
 
     <!-- SIDEBAR JS -->
-    <script src=" {% static '../assets/plugins/sidebar/sidebar.js' %} "></script>
+    <script src=" {% static '/assets/plugins/sidebar/sidebar.js' %} "></script>
 
     <!-- Color Theme js -->
-    <script src=" {% static '../assets/js/themeColors.js' %} "></script>
+    <script src=" {% static '/assets/js/themeColors.js' %} "></script>
 
     <!-- Sticky js -->
-    <script src=" {% static '../assets/js/sticky.js' %} "></script>
+    <script src=" {% static '/assets/js/sticky.js' %} "></script>
 
     <!-- CUSTOM JS -->
-    <script src=" {% static '../assets/js/custom.js' %} "></script>
+    <script src=" {% static '/assets/js/custom.js' %} "></script>
 
     <!-- Custom-switcher -->
-    <script src=" {% static '../assets/js/custom-swicher.js' %} "></script>
+    <script src=" {% static '/assets/js/custom-swicher.js' %} "></script>
 
     <!-- Switcher js -->
-    <script src=" {% static '../assets/switcher/js/switcher.js' %} "></script>
+    <script src=" {% static '/assets/switcher/js/switcher.js' %} "></script>
 
 </body>
 
