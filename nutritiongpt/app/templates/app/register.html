@@ -71,24 +71,52 @@
                                 </a>
                                 <input class="input100 border-start-0 ms-0 form-control" type="text" placeholder="User name" name="username">
                             </div>
+                            {% if form.username.errors %}
+                            <div class="alert alert-danger">
+                                {% for error in form.username.errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                             <div class="wrap-input100 validate-input input-group" data-bs-validate="Valid email is required: ex@abc.xyz">
                                 <a href=" {% static 'javascript:void(0)' %} " class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-email" aria-hidden="true"></i>
                                 </a>
                                 <input class="input100 border-start-0 ms-0 form-control" type="email" placeholder="Email" name="email">
                             </div>
+                            {% if form.email.errors %}
+                            <div class="alert alert-danger">
+                                {% for error in form.email.errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                             <div class="wrap-input100 validate-input input-group" id="Password-toggle">
                                 <a href=" {% static 'javascript:void(0)' %} " class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-eye" aria-hidden="true"></i>
                                 </a>
                                 <input class="input100 border-start-0 ms-0 form-control" type="password" placeholder="Password" name="password1">
                             </div>
+                            {% if form.password1.errors %}
+                            <div class="alert alert-danger">
+                                {% for error in form.password1.errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                             <div class="wrap-input100 validate-input input-group" id="Password-toggle-confirm">
                                 <a href=" {% static 'javascript:void(0)' %} " class="input-group-text bg-white text-muted">
                                     <i class="zmdi zmdi-eye" aria-hidden="true"></i>
                                 </a>
                                 <input class="input100 border-start-0 ms-0 form-control" type="password" placeholder="Confirm Password" name="password2">
                             </div>
+                            {% if form.password2.errors %}
+                            <div class="alert alert-danger">
+                                {% for error in form.password2.errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                             
                                         <button type="submit" class="login100-form-btn btn-primary">Register</button>
                             <div class="text-center pt-3">

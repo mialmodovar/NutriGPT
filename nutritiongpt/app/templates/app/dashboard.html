@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-    { % load static %}
+    {% load static %}
     <!-- META DATA -->
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
@@ -2366,37 +2366,358 @@
             <!--/APP-SIDEBAR-->
 
             <!--app-content open-->
-            <div class="main-content app-content mt-0">
-                <div class="side-app">
+<div class="main-content app-content mt-0">
+    <div class="side-app">
 
-                    <!-- CONTAINER -->
-                    <div class="main-container container-fluid">
+        <!-- CONTAINER -->
+        <div class="main-container container-fluid">
 
-                        <!-- PAGE-HEADER -->
-                        <div class="page-header">
-                            <h1 class="page-title">Empty</h1>
-                            <div>
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href=" {% static 'javascript:void(0)' %} ">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Empty</li>
-                                </ol>
-                            </div>
+            <!-- PAGE-HEADER -->
+            <div class="page-header">
+                <h1 class="page-title">Dashboard</h1>
+                
+            </div>
+            <!-- PAGE-HEADER END -->
+
+            <!-- ROW-1 OPEN -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" id="calorie-tracker">
+                        <div class="card-body">
+                            <h2 class="card-title">Calorie Tracker</h5>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-pink-1" style="width:"></div>
                         </div>
-                        <!-- PAGE-HEADER END -->
-
-                        <!-- ROW-1 OPEN -->
-                        <!-- Row -->
-                        <div class="row ">
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                        <!-- /Row -->
+                        <br>
+                            <h5 class="counter"></h5>
                     </div>
-                    <!-- CONTAINER CLOSED -->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" id="protein-tracker">
+                        <div class="card-body">
+                            <h2 class="card-title">Protein Tracker</h5>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-blue-1" style="width: {{ protein_percentage }}%"></div>
+                        </div>
+                        <br>
+                            <h5 class="counter"></h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" id="carbs-tracker">
+                        <div class="card-body">
+                            <h2 class="card-title">Carbs Tracker</h5>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-yellow-1" style="width:"></div>
+                        </div>
+                        <br>
+                            <h5 class="counter"></h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" id="fats-tracker">
+                        <div class="card-body">
+                            <h2 class="card-title">Fats Tracker</h5>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-green-1" style="width:">{{ fats_percentage }}%</div>
+                        </div>
+                        <br>
+                            <h5 class="counter"></h5>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <!--app-content closed-->
+            <!-- ROW-1 CLOSE -->
+
+            <!-- ROW-2 OPEN -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- INSERT FOOD AND EXERCISE TABLES TAB -->
+                    <div class="card">
+                        <div class="main-content-app pt-0">
+                            <div class="main-content-body main-content-body-chat h-100">
+                                <div class="main-chat-header pt-3 d-block d-sm-flex">
+                                    <div class="main-img-user online"><img alt="avatar" src=" {% static '/assets/images/users/1.jpg' %} "></div>
+                                    <div class="main-chat-msg-name mt-2">
+                                        <h6>AI Bot</h6>
+                                    </div>
+                                    <nav class="nav">
+                                        <div class="">
+                
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="nav-link" href=" {% static 'javascript:void(0)' %} " data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-horizontal"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href=" {% static 'javascript:void(0)' %} "><i class="fe fe-phone-call me-1"></i> Example in case you need it.</a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <!-- main-chat-header -->
+                                <div class="main-chat-body flex-2" id="ChatBody">
+                                    <div class="content-inner">
+                                    </div>
+                                </div>
+                                <div class="main-chat-footer">
+                                    <input type="text" class="form-control border-0" id="user-message" placeholder="Type your message...">
+                                    <button type="button" id="send-message" class="btn btn-primary">Send</button>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Diary Tabs</h3>
+                            <div class="panel panel-primary">
+                                <div class="tab-menu-heading tab-menu-heading-boxed">
+                                    <div class="tabs-menu tabs-menu-border">
+                                        <!-- Tabs -->
+                                        <ul class="nav panel-tabs" role="tablist">
+                                            <li><a href="#exerciseDiary" class="active" data-bs-toggle="tab" aria-selected="true" role="tab">Exercise Diary</a></li>
+                                            <li><a href="#mealDiary" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Meal Diary</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel-body tabs-menu-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="exerciseDiary" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table id="example4" class="table table-bordered text-nowrap border-bottom">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-bottom-0">Date</th>
+                                                            <th class="border-bottom-0">Exercise Name</th>
+                                                            <th class="border-bottom-0">Calories Burned</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="mealDiary" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table id="example3" class="table table-bordered text-nowrap border-bottom">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="border-bottom-0">Date</th>
+                                                            <th class="border-bottom-0">Food Name</th>
+                                                            <th class="border-bottom-0">Calories Gained</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- ROW-2 CLOSE -->
+
         </div>
+        <!-- CONTAINER CLOSED -->
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <style>
+            .typing-indicator {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url({% static '/assets/images/typing-indicator.gif' %}) center center no-repeat;
+            }
+            
+        </style>
+
+{% csrf_token %}
+<script>
+    function updateDashboardData() {
+    $.ajax({
+        url: "{% url 'get_dashboard_data' %}",
+        method: "GET",
+        data: {
+            'csrfmiddlewaretoken': '{{ csrf_token }}'
+        },
+        success: function(data) {
+            $('#calorie-tracker .progress-bar').css('width', data.calories_percentage + '%').text(data.calories_percentage + '%');
+            $('#calorie-tracker .counter').text(data.daily_intake.calories.toFixed(0) + ' kcal of ' + data.userprofile.calories_goal.toFixed(0) + ' kcal');
+
+            $('#protein-tracker .progress-bar').css('width', data.protein_percentage + '%').text(data.protein_percentage + '%');
+            $('#protein-tracker .counter').text(data.daily_intake.protein.toFixed(0) + ' g of ' + data.userprofile.protein_goal.toFixed(0) + ' g');
+
+            $('#carbs-tracker .progress-bar').css('width', data.carbs_percentage + '%').text(data.carbs_percentage + '%');
+            $('#carbs-tracker .counter').text(data.daily_intake.carbohydrates.toFixed(0) + ' g of ' + data.userprofile.carbohydrates_goal.toFixed(0) + ' g');
+
+            $('#fats-tracker .progress-bar').css('width', data.fats_percentage + '%').text(data.fats_percentage + '%');
+            $('#fats-tracker .counter').text(data.daily_intake.fats.toFixed(0) + ' g of ' + data.userprofile.fats_goal.toFixed(0) + ' g');
+
+            var exercises = JSON.parse(data.exercises);
+            var foods = JSON.parse(data.foods);
+
+
+
+            // Update exercise table
+            var exerciseTableBody = $('#example4 tbody');
+            exerciseTableBody.empty();
+            exercises.forEach(function(exercise) {
+                var row = $('<tr>');
+                row.append($('<td>').text(exercise.fields.date));
+                row.append($('<td>').text(exercise.fields.exercise_name));
+                row.append($('<td>').text(exercise.fields.calories_burned));
+                exerciseTableBody.append(row);
+            });
+
+            // Update food table
+            var foodTableBody = $('#example3 tbody');
+            foodTableBody.empty();
+            foods.forEach(function(food) {
+                var row = $('<tr>');
+                row.append($('<td>').text(food.fields.date));
+                row.append($('<td>').text(food.fields.food_name));
+                row.append($('<td>').text(food.fields.calories_gained));
+                foodTableBody.append(row);
+            });
+        }
+    });
+        }
+    
+
+    function getCurrentTimeString() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+
+        if (minutes < 10) {
+            minutes = '0' + minutes;
+        }
+
+        return hours + ':' + minutes;
+    }
+
+    function createUserMessageElement(message, timestamp) {
+        return `
+            <div class="media flex-row-reverse chat-right">
+                <div class="main-img-user online"><img alt="avatar" src="{% static '/assets/images/users/21.jpg' %}"></div>
+                <div class="media-body">
+                    <div class="main-msg-wrapper">${message}</div>
+                    <div>
+                        <span>${timestamp}</span> <a href="{% static 'javascript:void(0)' %}"><i class="icon ion-android-more-horizontal"></i></a>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    function createBotResponseElement(response, timestamp) {
+        return `
+            <div class="media chat-left">
+                <div class="main-img-user online"><img alt="avatar" src="{% static '/assets/images/users/1.jpg' %}"></div>
+                <div class="media-body">
+                    <div class="main-msg-wrapper">${response}</div>
+                    <div>
+                        <span>${timestamp}</span> <a href="{% static 'javascript:void(0)' %}"><i class="icon ion-android-more-horizontal"></i></a>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    function displayInitialBotMessage() {
+        const botInitialMessage = `
+            <div class="media chat-left">
+                <div class="main-img-user online"><img alt="avatar" src="{% static '/assets/images/users/1.jpg' %}"></div>
+                <div class="media-body">
+                    <div class="main-msg-wrapper" id="bot-response">
+                        I am a bot. I am here to help you. How may I help you?
+                    </div>
+                    <div>
+                        <span>${getCurrentTimeString()}</span> <a href="{% static 'javascript:void(0)' %}"><i class="icon ion-android-more-horizontal"></i></a>
+                    </div>
+                </div>
+            </div>`;
+        $('#ChatBody .content-inner').append(botInitialMessage);
+    }
+
+    function createTypingIndicatorElement() {
+        return `
+            <div class="media chat-left typing-indicator-wrapper">
+                <div class="main-img-user online"><img alt="avatar" src="{% static '/assets/images/users/1.jpg' %}"></div>
+                <div class="media-body">
+                    <div class="main-msg-wrapper">
+                        <div class="typing-indicator"></div>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    $(document).ready(function() {
+        updateDashboardData();
+        displayInitialBotMessage();
+
+        $("#send-message").click(function() {
+            var message = $("#user-message").val();
+            $("#user-message").val(""); // Clear the input field
+            var timestamp = getCurrentTimeString();
+
+            // Append the user message to the chat body
+            var userMessageElement = createUserMessageElement(message, timestamp);
+            $("#ChatBody .content-inner").append(userMessageElement);
+
+            // Show the typing indicator
+            var typingIndicatorElement = createTypingIndicatorElement();
+            $("#ChatBody .content-inner").append(typingIndicatorElement);
+
+            // Disable the send button and input field while waiting for a response
+            $("#send-message").prop("disabled", true);
+            $("#user-message").prop("disabled", true);
+
+            $.ajax({
+                url: '{% url "chatbot_response" %}',
+                method: 'POST',
+                data: {
+                    'message': message,
+                    'csrfmiddlewaretoken': '{{ csrf_token }}',
+                },
+                success: function(response) {
+                    // Remove the typing indicator
+                    $(".typing-indicator-wrapper").remove();
+
+                    // Append the bot response to the chat body
+                    var botResponseElement = createBotResponseElement(response.response, timestamp);
+                    $("#ChatBody .content-inner").append(botResponseElement);
+
+                    // Re-enable the send button and input field
+                    $("#send-message").prop("disabled", false);
+                    $("#user-message").prop("disabled", false);
+                    updateDashboardData();
+                },
+                error: function() {
+                    // Remove the typing indicator
+                    $(".typing-indicator-wrapper").remove();
+
+                    alert("An error occurred. Please try again.");
+
+                    // Re-enable the send button and input field
+                    $("#send-message").prop("disabled", false);
+                    $("#user-message").prop("disabled", false);
+                }
+            })
+        });
+        
+    });
+</script>
 
         <!-- Sidebar-right -->
         <div class="sidebar sidebar-right sidebar-animate">
