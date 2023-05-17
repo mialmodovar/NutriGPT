@@ -33,8 +33,8 @@ python -m venv myenv
 source myenv/bin/activate
 Install the project requirements:
 
-Copy code
-pip install -r requirements.txt
+
+` pip install -r requirements.txt `
 Create a .env file inside the nutritiongpt/app directory with your OpenAI API key:
 
 makefile
