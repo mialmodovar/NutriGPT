@@ -1,6 +1,30 @@
 # NutriGPT
 
-NutriGPT is a web application that let's you keep track of your daily nutrition and exercise rates.
+## Project Overview
+This application uses GPT-4 with zero-shot prompts to assist users in tracking their daily calorie and nutrient intake. It provides a unique interface where users can set goals, log meals, and track exercises through natural language conversations.
+
+## Features
+Data Handling
+The app receives user's current stats and info at the end of each prompt such as calorie goal, current calories, weight, height, age, gender, and current intake of protein, carbohydrates, and fats.
+
+Setting Nutrient Goals
+Users can set their protein, carbohydrate, or fat goal through a simple conversation. The app acknowledges the request and updates the database accordingly.
+
+Setting Calorie Goal
+Users can set their calorie goal in a similar fashion. The app acknowledges the request and updates the database.
+
+Nutrient Tracking
+The app is designed to be observant. When a user mentions what they've eaten, the app records the food along with its calorie and macro count.
+
+Exercise Tracking
+When a user mentions they've performed an exercise, the app records it and estimates the calories burnt.
+
+Undoing Actions
+The application allows users to undo meal and exercise actions, reflecting these changes in their intake and calories burnt.
+
+## 
+Performance
+The application of GPT-4 in this project allowed for more accurate and reliable responses, and enhanced the overall user experience. The language model showed significant improvements in understanding complex zero-shot prompts as compared to its predecessor, GPT-3.5.
 
 ## Installation
 
@@ -27,7 +51,4 @@ NutriGPT is a web application that let's you keep track of your daily nutrition 
    python manage.py runserver
    ```
 
-The web application should now be accessible at http://127.0.0.1:8000/. 
-
-Note: The above instructions assume that you have already obtained an API key from OpenAI. If you have not done so, please visit their website to learn more about their services and how to obtain an API key. 
 
