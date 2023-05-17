@@ -24,8 +24,9 @@ Furthermore, custom LLaMA models can be fine-tuned and enriched with embeddings 
 
 ## Installation
 Clone the repository and navigate to the project directory.
-
+<br>
 Set up a virtual environment for the project:
+<br>
 ` bash ` <br>
 ` python -m venv myenv ` <br>
 ` source myenv/bin/activate `
@@ -35,5 +36,6 @@ Install the project requirements:
 ` pip install -r requirements.txt ` 
 <br>
 Create a .env file inside the nutritiongpt/app directory with your OpenAI API key:
+<br>
 ` OPEN_AI=YOUR_API_KEY_HERE `
 
