@@ -26,21 +26,13 @@ Furthermore, custom LLaMA models can be fine-tuned and enriched with embeddings 
 Clone the repository and navigate to the project directory.
 
 Set up a virtual environment for the project:
+` bash <br>
+python -m venv myenv <br>
+source myenv/bin/activate `
+<br>
+Install the project requirements: 
+` pip install -r requirements.txt ` 
 
-bash
-Copy code
-python -m venv myenv
-source myenv/bin/activate
-Install the project requirements:
-
-
-` pip install -r requirements.txt `
 Create a .env file inside the nutritiongpt/app directory with your OpenAI API key:
+` OPEN_AI=YOUR_API_KEY_HERE `
 
-makefile
-Copy code
-OPEN_AI=YOUR_API_KEY_HERE
-Run the Django development server:
-
-Copy code
-python manage.py runserver
