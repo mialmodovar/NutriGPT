@@ -8,7 +8,7 @@ This application employs a model with a single zero-shot prompt, providing a uni
 
 
 ## Features
-User Interaction and Data Handling
+### User Interaction and Data Handling
 The app is designed to handle data communication between the user and the model seamlessly. The app communicates user's current stats and information, including their calorie goal, current calories, weight, height, age, gender, and current intake of protein, carbohydrates, and fats, to the model during the conversation. The model then uses this information to generate responses that are informative and engaging for the user.
 
 ### Goal Setting and Tracking
