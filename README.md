@@ -23,19 +23,19 @@ With the use of technologies like LangChain, GPT4All, and LLaMA, it's possible t
 Furthermore, custom LLaMA models can be fine-tuned and enriched with embeddings for even more precise results. LangChain provides the ability to generate embeddings locally, improving data processing efficiency. Fine-tuning, albeit resource-intensive, allows a pre-trained model to incorporate new knowledge or adapt to a specific style, further improving the model's performance.
 
 ## Installation
-Clone the repository and navigate to the project directory.
+### Clone the repository and navigate to the project directory.
 <br>
-Set up a virtual environment for the project:
+### Set up a virtual environment for the project:
 <br>
 ` bash ` <br>
 ` python -m venv myenv ` <br>
 ` source myenv/bin/activate `
 <br>
-Install the project requirements: 
+### Install the project requirements: 
 <br>
 ` pip install -r requirements.txt ` 
 <br>
-Create a .env file inside the nutritiongpt/app directory with your OpenAI API key:
+### Create a .env file inside the nutritiongpt/app directory with your OpenAI API key:
 <br>
 ` OPEN_AI=YOUR_API_KEY_HERE `
 
