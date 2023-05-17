@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 
 import time
 from django.db.models import F
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import AuthenticationForm, UserChangeForm
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm , AuthenticationForm
 from django.contrib.auth import logout as auth_logout
@@ -15,7 +15,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as auth_login
 from .models import UserProfile, DailyIntake, Exercise, Food
-from .forms import UserProfileForm
+from .forms import UserProfileForm, CustomUserChangeForm
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import re
@@ -32,6 +32,8 @@ def chatbot_response(request):
     if request.method == 'POST':
         message = request.POST.get('message')
         
+        if len(message) < 10 or len(message) > 200:
+            return JsonResponse({'response': "Please don't spam me"})
         # Initialize the OpenAI API with your API key
         openai.api_key = gpt4_api_key
         
@@ -41,7 +43,7 @@ def chatbot_response(request):
         daily_intake, created = DailyIntake.objects.get_or_create(user=user, date=timezone.now())
 
         # Check if user has exceeded request limit
-        if daily_intake.request_counter >= 40:
+        if daily_intake.request_counter >= 15:
             return JsonResponse({'response': 'You have reached your maximum messages for the day'})
 
         # Calculate the user's age based on the date of birth
@@ -126,9 +128,11 @@ Python String Formatting: Ensure all responses are correctly formatted as Python
                         # Extract the string after the string (and colon)
                         match = re.search(f"{string}: ([\w\s]+)", db_update)
                         if match:
-                            text = match.group(1).strip()
-                            # Store the value in the dictionary
-                            update_dict[string] = text
+                                text = match.group(1).strip()
+                                # Remove everything after \n
+                                text = text.split('\n')[0]
+                                # Store the value in the dictionary
+                                update_dict[string] = text
                     else:
                         # Extract the number after the string (and colon)
                         match = re.search(f"{string}: ([\d\.]+)", db_update)
@@ -216,7 +220,8 @@ Python String Formatting: Ensure all responses are correctly formatted as Python
     return JsonResponse({'error': 'Invalid request method'})
 
 @login_required
-def index(request):
+def chat(request):
+    daily_intake, created = DailyIntake.objects.get_or_create(user=request.user, date=timezone.now())
     return render(request, 'app/chat.html')
 
 def register(request):
@@ -236,7 +241,7 @@ def register(request):
             time.sleep(3)
             auth_login(request, user)
             print('User created successfully!')
-            return redirect('index') # Replace 'index' with the name of the view where you want to redirect after successful registration
+            return redirect('dashboard') # Replace 'index' with the name of the view where you want to redirect after successful registration
         else:
             print('User creation failed!')
     else:
@@ -250,7 +255,7 @@ def login(request):
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
             auth_login(request, form.get_user())
-            return redirect('index') # Replace 'index' with the name of the view where you want to redirect after successful login
+            return redirect('dashboard') # Replace 'index' with the name of the view where you want to redirect after successful login
     else:
         form = AuthenticationForm()
     return render(request, 'app/login.html', {'form': form})
@@ -263,19 +268,19 @@ def logout(request):
 
 @login_required
 def edit_profile(request):
-    # Get the current user's UserProfile or create one if it doesn't exist
-    user_profile, created = UserProfile.objects.get_or_create(user=request.user)
-
     if request.method == 'POST':
-        form = UserProfileForm(request.POST, instance=user_profile)
-        if form.is_valid():
-            form.save()
-            return redirect('edit_profile')  # Replace 'profile' with the name of the view where you display the user's profile
+        print('dod')
+        profile_form = UserProfileForm(request.POST, instance=request.user.userprofile)
+        if profile_form.is_valid():
+            print('valid')
+            profile_form.save()
+            # Add a success message or redirect
+        else:
+            print('fods')
+            print(profile_form.errors)
     else:
-        form = UserProfileForm(instance=user_profile)
-
-    context = {'form': form}
-    return render(request, 'app/editprofile.html', context)
+        profile_form = UserProfileForm(instance=request.user.userprofile)
+    return render(request, 'app/editprofile.html', {'profile_form': profile_form})
 
 def food_diary(request):
     # Get the current user
@@ -300,7 +305,10 @@ def exercise_diary(request):
 
 @login_required
 def dashboard(request):
+    daily_intake, created = DailyIntake.objects.get_or_create(user=request.user, date=timezone.now())
     return render(request, 'app/dashboard.html')
+
+
 
 @login_required
 def get_dashboard_data(request):
